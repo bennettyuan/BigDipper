@@ -1,0 +1,16 @@
+PODS:
+  - BigDipper (0.1.0)
+
+DEPENDENCIES:
+  - BigDipper
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - BigDipper
+
+SPEC CHECKSUMS:
+  BigDipper: 2f5becb47cc28f43d46bdf93f112e53c1ab5c38f
+
+PODFILE CHECKSUM: c3eecfba95350db973970134c805a4acfba27150
+
+COCOAPODS: 1.10.1
