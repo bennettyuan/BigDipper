@@ -31,7 +31,7 @@ public protocol RouterType: AnyObject {
 	func dismiss(_ viewController: UIViewController, animated: Bool, completion: (() -> Void)?)
 }
 
-extension RouterType {
+public extension RouterType {
 
 	func push(_ viewController: UIViewController, from source: UIViewController, animated: Bool = true) {
 		guard let sourceNavigationController = source.navigationController else {
