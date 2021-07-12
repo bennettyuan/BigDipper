@@ -14,7 +14,12 @@ public protocol ModuleType: AnyObject {
 public protocol ViewType: UIViewController {}
 
 public protocol ViewTypeDelegate: AnyObject {
+
 	func viewDidLoad()
+	func viewWillAppear(_ animated: Bool)
+	func viewDidAppear(_ animated: Bool)
+	func viewWillDisappear(_ animated: Bool)
+	func viewDidDisappear(_ animated: Bool)
 }
 
 public protocol PresenterType: AnyObject {}
@@ -29,6 +34,18 @@ public protocol RouterType: AnyObject {
 	func pop(_ viewController: UIViewController, animated: Bool)
 	func present(_ viewController: UIViewController, from source: UIViewController, animated: Bool, completion: (() -> Void)?)
 	func dismiss(_ viewController: UIViewController, animated: Bool, completion: (() -> Void)?)
+}
+
+// MARK: - Pre-implementation
+
+// Optional methods
+extension ViewTypeDelegate {
+
+	func viewDidLoad() {}
+	func viewWillAppear(_ animated: Bool) {}
+	func viewDidAppear(_ animated: Bool) {}
+	func viewWillDisappear(_ animated: Bool) {}
+	func viewDidDisappear(_ animated: Bool) {}
 }
 
 public extension RouterType {
