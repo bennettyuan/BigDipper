@@ -39,7 +39,7 @@ public protocol RouterType: AnyObject {
 // MARK: - Pre-implementation
 
 // Optional methods
-extension ViewTypeDelegate {
+public extension ViewTypeDelegate {
 
 	func viewDidLoad() {}
 	func viewWillAppear(_ animated: Bool) {}
