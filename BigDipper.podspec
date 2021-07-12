@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name = "BigDipper"
-  spec.version = "0.3.0"
+  spec.version = "0.3.1"
   spec.summary = "A lightweight framework of VIPER architecture with Swift."
   spec.homepage = "https://github.com/bennettyuan18/BigDipper"
   spec.license = { :type => "MIT", :file => "LICENSE" }
